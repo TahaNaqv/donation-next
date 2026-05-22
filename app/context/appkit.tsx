@@ -2,7 +2,7 @@
 
 import { createAppKit } from "@reown/appkit/react";
 import { SolanaAdapter } from "@reown/appkit-adapter-solana/react";
-import { solana, solanaDevnet } from "@reown/appkit/networks";
+import { solanaDevnet } from "@reown/appkit/networks";
 
 const projectId = process.env.NEXT_PUBLIC_REOWN_PROJECT_ID;
 
@@ -26,7 +26,7 @@ const metadata = {
 
 createAppKit({
   adapters: [solanaWeb3JsAdapter],
-  networks: [solanaDevnet, solana],
+  networks: [solanaDevnet],
   defaultNetwork: solanaDevnet,
   metadata,
   projectId,
